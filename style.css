@@ -6,7 +6,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: Sans-Serif;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.5;
   color: #333;
 }
@@ -46,13 +46,13 @@ header nav {
 
 header nav ul li {
   display: inline-block;
-  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 header .title {
   text-align: center;
   width: 100%;
-  max-width: 800px;
+  max-width: 42rem;
 }
 
 header .title p {
@@ -63,7 +63,7 @@ header .title p {
 }
 
 header .title h1 {
-  font-size: 6rem;
+  font-size: 4rem;
   margin: 0 0 1rem;
 }
 
@@ -76,7 +76,7 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   background: #fafafa;
-  padding: 4.5rem 3rem;
+  padding: 3rem 3rem;
 }
 
 section.alternative {
@@ -85,9 +85,9 @@ section.alternative {
 }
 
 section article {
-  flex: 25 1 auto;
+  flex: 24 1 auto;
   font-size: 0.8rem;
-  max-width: 25rem;
+  max-width: 24rem;
   margin: 1.5rem;
 }
 
@@ -105,9 +105,10 @@ h4 {
 }
 
 section aside {
-  flex: 15 1 auto;
-  max-width: 15rem;
+  flex: 12 1 auto;
+  max-width: 12rem;
   margin: 1.5rem;
+  align-self: center;
 }
 
 section aside img {
@@ -140,14 +141,21 @@ section article ul.authors li:hover {
 footer {
   font-size: .8rem;
   background: #EDDFCE;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   padding: 3rem 1.5rem;
 }
 
+footer .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 footer .column {
-  width: 20rem;
+  flex: 1 1 18rem;
   margin: 1.5rem;
 }
 
@@ -155,13 +163,26 @@ footer .contact img {
   margin-top: .5rem;
 }
 
-@media (max-width: 800px) {
-  html, body {
-    font-size: 18px;
-  }
+footer dt {
+  font-weight: bold;
+}
 
+footer .tour dd {
+  margin: 0 0 0.5rem;
+  font-style: italic;
+}
+
+footer .contact dd {
+  margin: 0;
+}
+
+@media (max-width: 800px) {
   header {
     height: auto;
+  }
+
+  section, footer {
+    padding: 2rem 1rem;
   }
 
   footer .contact img {
@@ -169,9 +190,9 @@ footer .contact img {
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 600px) {
   header .title h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   header nav {
@@ -194,11 +215,13 @@ footer .contact img {
     max-width: 100%;
   }
 
-  section {
-    padding: 1.5rem 0;
+  section article ul.authors li {
+    padding: .25rem;
+    margin: .25rem 0;
+    font-size: .7rem;
   }
 
-  footer {
+  section, footer {
     padding: 1.5rem 0;
   }
 }
