@@ -33,7 +33,7 @@ header {
   align-items: center;
   height: 85vh;
 
-  background: url('/header.jpg') no-repeat center center;
+  background: url('/header.jpg') #EDDFCE no-repeat center center;
   background-size: cover;
   color: #fff;
   text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
