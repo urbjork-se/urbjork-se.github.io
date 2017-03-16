@@ -187,6 +187,7 @@ footer .contact dd {
 
   footer .contact img {
     width: 100%;
+    max-width: 400px;
   }
 }
 
