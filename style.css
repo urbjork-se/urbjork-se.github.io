@@ -28,8 +28,7 @@ ul {
 
 header {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 85vh;
 
@@ -40,8 +39,10 @@ header {
 }
 
 header nav {
-  align-self: flex-end;
+  position: absolute;
   padding: 2rem;
+  top: 0;
+  right: 0;
 }
 
 header nav ul li {
@@ -52,23 +53,19 @@ header nav ul li {
 header .title {
   text-align: center;
   width: 100%;
-  max-width: 42rem;
+  max-width: 39rem;
+  margin: 6rem 3rem;
 }
 
 header .title p {
   font-size: 0.8rem;
   font-style: italic;
   font-weight: normal;
-  padding: 0 3rem;
 }
 
 header .title h1 {
   font-size: 4rem;
   margin: 0 0 1rem;
-}
-
-header .sponsors {
-  padding: 4rem;
 }
 
 section {
@@ -102,6 +99,10 @@ h3 {
 
 h4 {
   margin: 0.5rem 0 0;
+}
+
+#about a {
+  text-decoration: underline;
 }
 
 section aside {
@@ -156,6 +157,7 @@ footer .container {
 
 footer .column {
   flex: 1 1 18rem;
+  max-width: 24rem;
   margin: 1.5rem;
 }
 
@@ -185,6 +187,11 @@ footer .contact dd {
     padding: 2rem 1rem;
   }
 
+  section article,
+  footer .column {
+    max-width: 20rem;
+  }
+
   footer .contact img {
     width: 100%;
     max-width: 400px;
@@ -193,7 +200,7 @@ footer .contact dd {
 
 @media (max-width: 600px) {
   header .title h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   header nav {
@@ -201,11 +208,7 @@ footer .contact dd {
   }
 
   header .title {
-    margin: 2rem;
-  }
-
-  header .title p {
-    padding: 0 2rem;
+    margin: 2rem 1.5rem;
   }
 
   header .sponsors {
@@ -214,6 +217,10 @@ footer .contact dd {
 
   header .sponsors img {
     max-width: 100%;
+  }
+
+  section article {
+    margin: 1rem;
   }
 
   section article ul.authors li {
